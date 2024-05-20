@@ -1,0 +1,19 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/BigQuery/query",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5002
+          }
+        ],
+        "UpstreamPathTemplate": "/api/BigQuery/query",
+        "UpstreamHttpMethod": [ "Get" ],
+        "AddQueriesToRequestQueryString": true,
+        "DangerousAcceptAnyServerCertificateValidator": true
+      }
+    ]
+  }
+  
